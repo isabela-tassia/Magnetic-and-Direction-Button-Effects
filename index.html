@@ -7,28 +7,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <a href="#" class="btn" style="--crl:#ff6464;"><span>Magnetic</span></a>
-    <a href="#" class="btn" style="--crl:#29aeef;"><span>Button</span></a>
-    <script>
-        let btn = document.querySelectorAll('.btn').forEach(btn => {
-            btn.addEventListener('mousemove', (e)=> {
-                let x = e.offsetX;
-                let y = e.offsetY;
-                let btnWidth = btn.clientWidth;
-                let btnHeight = btn.clientHeight;
-                let = transX = (x - btnWidth/2);
-                let transY = (x - btnHeight/2)
-                btn.style.transform = 'translateX($(transX)px) translateY($ {transY}px)';
+    <a href="#" class="btn" style="--clr:#ff6464;"><span>Magnetic</span></a>
+    <a href="#" class="btn" style="--clr:#29aeef;"><span>Button</span></a>
+    <script src="script.js"></script>
 
-                let mx = e.pageX = btn.offsetLeft;
-                let my = e.pageY = btn.offsetTop;
-                btn.style.setProperty('--x', mx + 'px');
-                btn.style.setProperty('--y', my + 'px');
-                
-            })
-            btn.style.transform = '';
-        })
-
-    </script>
 </body>
 </html>

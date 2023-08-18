@@ -32,15 +32,16 @@ body
     cursor: pointer;
     text-decoration: none;
     border-radius: 40px;
-    transition: transform 0.1s;
+    transition: transform 0.3s;
     overflow: hidden;
+    
 }
 .btn span
 {
     position: relative;
     pointer-events: none;
     color: rgba(255,255,255,0.25);
-    transition: 0.5s;
+    transition: 0.1s;
 }
 .btn:hover span
 {
@@ -52,7 +53,7 @@ body
     position: absolute;
     top: var(--y);
     left: var(--x);
-
+    border-radius: 50%;
     transform: translate(-50%, -50%);
     background: var(--clr);
     width: 0;
